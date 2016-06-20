@@ -1,0 +1,17 @@
+language: R
+sudo: true
+cache: packages
+
+r_packages:
+	- devtools
+	
+r_github_packages:
+	- devtools::install_github("rstudio/bookdown")
+
+r_packages:
+  - covr
+
+notifications:
+    email:
+      on_success: change
+      on_failure: change
